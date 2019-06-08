@@ -4,10 +4,10 @@ import urequests
 import ujson
 import time
 
-sensor_url = "http://foo.bodaegl.com/air.json"
+sensor_url = "http://api.luftdaten.info/static/v1/sensor/11276/"
 
-red = PWM(Pin(2), freq=500, duty=0)
-green = PWM(Pin(0), freq=500, duty=0)
+red = PWM(Pin(14), freq=500, duty=0)
+green = PWM(Pin(12), freq=500, duty=0)
 blue = PWM(Pin(4), freq=500, duty=0)
 white = PWM(Pin(5), freq=500, duty=0)
 
@@ -60,6 +60,6 @@ def run():
             update()
         except Exception as e:
             print(e)
-        time.sleep(2)
+        time.sleep(10)
 
 run()

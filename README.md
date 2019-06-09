@@ -14,3 +14,18 @@ Microcontroller removed and some wires added:
 Schematic
 
 ![Schematic](http://foo.bodaegl.com/wiring.png)
+
+Connections from NodeMCU to the LED board:
+
+5V -> 5V pad on the back of the board
+
+GND -> GND pad on the back of the board (though all GNDs are common so could tack it on elsewhere if more convenient)
+
+
+D5 -> R pad of MCU footprint
+
+D6 -> G pad of MCU footprint
+
+D2 -> B pad of MCU footprint
+
+D1 -> W pad of MCU footprint

@@ -4,7 +4,7 @@ import urequests
 import ujson
 import time
 
-sensor_url = "http://air.bodaegl.com/test"
+sensor_url = "http://air.bodaegl.com/abdn_mean"
 
 red = PWM(Pin(14), freq=500, duty=0)
 green = PWM(Pin(12), freq=500, duty=0)

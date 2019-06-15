@@ -35,3 +35,9 @@ Put details of Wifi netorks into secrets.py then load boot.py, main.py and pwm_a
 boot.py looks at what wifi networks it can see and if there is a passowrd for them in secrets.py it connects. 
 
 Then main.py (pwm_alert.py) will be run, which gets the colour it should display from the web and sets the colour component values as duty cycles for PWM.
+
+Rough layout of the transistors on the board: 
+
+![Transistors](http://foo.bodaegl.com/transistors.png)
+
+Can put control lines onto resistors if MCU pads aren't usable after removing MCU.
